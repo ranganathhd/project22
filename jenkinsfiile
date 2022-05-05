@@ -1,0 +1,8 @@
+node{
+stage('SCM Checkout'){
+git'https://github.com/ranganathhd/project22'
+}
+stage('compile-package){
+sh 'mvn pacckage'
+}
+}
